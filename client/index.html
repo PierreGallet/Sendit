@@ -1,0 +1,283 @@
+<head>
+    <base href="/">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+
+<body layout="column" ng-controller="home as vm">
+    <!-- <div ng-app="socially" ng-strict-di="">
+    ng-app="socially" should be there if app.js do not Parties = new Mongo.Collection('parties');contains function onReady() for cross plateforms management
+    ng-strict-di="" is there in case there is a minification problem, we will find in already in development and not only after minification in production -->
+
+    <md-toolbar>
+        <div class="md-toolbar-tools" ng-class="{'active' : boolChangeClass}">
+            <span flex="5"></span>
+            <img ng-src="/images/senditlogo.png" alt="sendit_logo" height="42" width="42">
+            <span flex></span>
+            <md-button hide-xs hide-sm scroll-to="solution" aria-label="Solution">Solution</md-button>
+            <md-button hide-xs hide-sm scroll-to="why" aria-label="Why">Why</md-button>
+            <md-button hide-xs hide-sm scroll-to="technology" aria-label="Technology">Technology</md-button>
+            <md-button hide-xs hide-sm scroll-to="team" aria-label="Team">Team</md-button>
+            <md-button hide-xs hide-sm scroll-to="contact" aria-label="Contact">Contact</md-button>
+            <md-button hide-gt-sm ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+                <md-icon md-svg-icon="/images/menu.svg" aria-label="solution" class="solution"></md-icon>
+            </md-button>
+            <span flex="5"></span>
+        </div>
+    </md-toolbar>
+
+    <md-sidenav hide-gt-sm class="md-sidenav-right md-whiteframe-4dp" md-component-id="right" layout layout-align="center center">
+        <div layout="column" layout-align="center center">
+            <md-button ng-click="close()" scroll-to="solution" aria-label="Solution">Solution</md-button>
+            <md-button ng-click="close()" scroll-to="why" aria-label="Why">Why</md-button>
+            <md-button ng-click="close()" scroll-to="technology" aria-label="Technology">Technology</md-button>
+            <md-button ng-click="close()" scroll-to="team" aria-label="Team">Team</md-button>
+            <md-button ng-click="close()" scroll-to="contact" aria-label="Contact">Contact</md-button>
+        </div>
+    </md-sidenav>
+
+    <md-content layout-fill style="position:absolute !important; top:0px;" scroll>
+
+
+        <section id="solution" class="solution_holder" layout="column">
+            <div class="title" flex="40" layout="row" layout-align="center center" layout-margin>
+                <h1 class="md-display-3"> You just have to Send <strong>It</strong></h1>
+            </div>
+
+            <div class="description" flex="60"  layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-align-xs="center center" layout-margin>
+                <div flex="50" flex-sm="100" layout="row" layout-align="center center" class="solution-container">
+                    <md-icon md-svg-icon="/images/solution.svg" aria-label="solution" class="solution"></md-icon>
+                </div>
+                <div flex="50" layout="column" layout-align="center center" layout-margin>
+                    <h1 class="md-display-2">When <strong>AI</strong> empowers <br/> customer relationship</h1>
+                    <md-button class="md-raised md-primary" scroll-to="contact" aria-label="tryourdemo">Request a demo</md-button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="why" class="why_holder" layout="row" layout-xs="column" layout-align="center center">
+            <div flex="33" class="figure watch" layout="column" layout-align="center center">
+                <md-icon md-svg-icon="/images/time.svg" aria-label="watch"></md-icon>
+                <h3 class="txt"><strong>Gain time</strong>, <br/> automatically push messages</h3>
+            </div>
+            <div flex="33" class="figure lightbulb"  layout="column" layout-align="center center">
+                <md-icon md-svg-icon="/images/artificial_intelligence.svg" aria-label="lightbulb"></md-icon>
+                <h3 class="txt">Allow <strong>artificial intelligence</strong> to <br/> turn your operators experts</h3>
+            </div>
+            <div flex="33" class="figure smiley"  layout="column" layout-align="center center">
+                <md-icon md-svg-icon="/images/happy.svg" aria-label="smiley"></md-icon>
+                <h3 class="txt">Improve your <br/> <strong>customer's satisfaction</strong></h3>
+            </div>
+        </section>
+
+
+        <section id="technology" class="technology_holder" color="white" layout-align="none center" layout="column">
+            <div class="technology-wrap" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+                <div class="quote" layout="row" layout-align="center center">
+                    <md-icon class="quote-open" md-svg-icon="/images/quote_open.svg" aria-label="fleche"></md-icon>
+                    <h3 class="quotation content">
+                        It has been 15 days that I bought a book
+                        on your platform (order number 17A32). I
+                        still haven’t recieved anything yet,
+                        It is scandalous
+                    </h3>
+                    <md-icon class="quote-close" md-svg-icon="/images/quote_close.svg" aria-label="fleche"></md-icon>
+                </div>
+
+                <div class="arrow-wrap-1" layout-align="center center">
+                    <md-icon class="arrow" md-svg-icon="/images/fleche.svg" layout-align="center center" aria-label="fleche"></md-icon>
+                    <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
+                </div>
+
+                <div class="language_understanding" layout="row" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                    <div class="laius-wrap-1" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+                        <h2 class="title"> LANGUAGE UNDERSTANDING</h2>
+                        <h3 class="content">
+                            Natural language processing capture the important concepts
+                            of the sentence to accuratly interpret the issue of the
+                            customer.
+                        </h3>
+                    </div>
+                    <md-icon class="ner_icon" md-svg-icon="/images/ner.svg" aria-label="guillemet"></md-icon>
+                </div>
+
+                <div class="arrow-wrap-2">
+                    <md-icon class="arrow-2" md-svg-icon="/images/fleche_2.svg" aria-label="fleche"></md-icon>
+                    <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
+                </div>
+
+                <div class="customer_info" layout="row" layout-align="none center" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                    <div class="laius-wrap-2" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+                        <h2 class="title"> GETTING CUSTOMER'S INFORMATIONS </h2>
+                        <h3 class="content">
+                            To better understand the reasons of the customer demand,
+                            we connect with our client database to get the importants
+                            piece of information.
+                        </h3>
+                    </div>
+                    <md-icon class="customer_info_icon" md-svg-icon="/images/customer_infos.svg" aria-label="guillemet"></md-icon>
+                </div>
+
+                <div class="arrow-wrap-3">
+                    <md-icon class="arrow-3" md-svg-icon="/images/fleche_3.svg" aria-label="fleche"></md-icon>
+                    <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
+                </div>
+
+                <div class="deep-learning" layout="row" layout-align="none center" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                    <div class="laius-wrap-3" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+                        <h2 class="title"> DEEP LEARNING </h2>
+                        <h3 class="content">
+                            We use the recent technological breakthroughs of
+                            deep learning, optimized for your domain,
+                            to find the most human like answer to the
+                            customer demand.
+                        </h3>
+                    </div>
+                    <md-icon class="deep-learning-icon" md-svg-icon="/images/deep_learning.svg" aria-label="guillemet"></md-icon>
+                </div>
+
+                <div class="arrow-wrap-4">
+                    <md-icon class="arrow-4" md-svg-icon="/images/fleche_4.svg" aria-label="fleche"></md-icon>
+                    <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
+                </div>
+
+                <div class="improving" layout="row" layout-align="none center" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                    <div class="laius-wrap-4" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+                        <h2 class="title"> CONTINUOUSLY IMPROVING </h2>
+                        <h3 class="content">
+                            One of the great advantage of machine learning is that it improves over time.
+                            It starts to know the customers issues better, and also each customer individually.
+                            And it will never stop improving.
+                        </h3>
+                    </div>
+                    <md-icon class="improving-icon" md-svg-icon="/images/improving.svg" aria-label="guillemet"></md-icon>
+                </div>
+
+                <div class="arrow-wrap-5">
+                    <md-icon class="arrow-5" md-svg-icon="/images/fleche_5.svg" aria-label="fleche"></md-icon>
+                    <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
+                </div>
+
+                <div class="interface" layout="row" layout-align="none center" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                    <div class="laius-wrap-5" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+                        <h2 class="title"> USER INTERFACE </h2>
+                        <h3 class="content">
+                            The best UX to manage the most powerful
+                            intelligence ever made for customers.
+                        </h3>
+                    </div>
+                    <md-icon class="user-interface-icon" md-svg-icon="/images/user_interface.svg" aria-label="guillemet"></md-icon>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="team" class="team_holder" layout="row" layout-xs="column" layout-align="center center">
+            <div flex="50" class="figure" layout="column" layout-align="center center">
+                <md-icon md-svg-icon="/images/pierre.svg" aria-label="pierre"></md-icon>
+                <h3 class="txt">
+                    <strong>Pierre H. Gallet</strong><br/>
+                    <h4> Ecole Centrale Paris<br/> ESSEC Business School</h4>
+                </h3>
+                <div layout="row">
+                    <a ng-href="{{twitterP}}">
+                        <md-icon class="twitter" md-svg-icon="/images/twitter_logo.svg"></md-icon>
+                    </a>
+                    <a ng-href="{{linkedinP}}">
+                        <md-icon class="linkedin" md-svg-icon="/images/linkedin_logo.svg"></md-icon>
+                    </a>
+                    <a ng-href="{{githubP}}">
+                        <md-icon class="github" md-svg-icon="/images/github_logo.svg"></md-icon>
+                    </a>
+                </div>
+            </div>
+            <div flex="50" class="figure"  layout="column" layout-align="center center">
+                <md-icon md-svg-icon="/images/maxime.svg" aria-label="maxime"></md-icon>
+                <h3 class="txt"><strong>Maxime Le Dentec</strong><br/>
+                    <h4>Ecole Centrale Paris</h4>
+                </h3>
+                <div layout="row">
+                    <a ng-href="{{twitterM}}">
+                        <md-icon class="twitter" md-svg-icon="/images/twitter_logo.svg"></md-icon>
+                    </a>
+                    <a ng-href="{{linkedinM}}">
+                        <md-icon class="linkedin" md-svg-icon="/images/linkedin_logo.svg"></md-icon>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact_holder" layout="column">
+
+            <h2> INTERESTED BY OUR SOLUTIONS? </h2>
+            <div layout="row" layout-xs="column" layout-align="center start" layout-align-xs="center center" layout-margin>
+                <div flex="50" class="email" layout="column" layout-align="center center" >
+                    <h3>Leave us your contact : </h3>
+                    <form ng-submit="vm.addProspect()" layout="column" layout-align="center center">
+                        <div layout="row">
+                            <md-input-container layout-align="center center">
+                                <md-icon md-svg-src="images/person.svg" class="name"></md-icon>
+                                <label>FristName</label>
+                                <input ng-model="vm.newProspect.FirstName" class="input" required>
+                                <div ng-messages="vm.newProspect.FristName.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container layout-align="center center">
+                                <label>LastName</label>
+                                <input ng-model="vm.newProspect.LastName" class="input" required>
+                                <div ng-messages="vm.newProspect.LastName.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <md-input-container layout-align="center center">
+                            <md-icon md-svg-src="/images/company.svg"></md-icon>
+                            <label>Company</label>
+                            <input ng-model="vm.newProspect.Compagny" class="input" required>
+                            <div ng-messages="vm.newProspect.Compagny.$error">
+                                <div ng-message="required">This is required.</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container layout-align="center center">
+                            <md-icon md-svg-src="/images/email.svg"></md-icon>
+                            <label>Email</label>
+                            <input ng-model="vm.newProspect.Email" type="email" class="input" required>
+                            <div ng-messages="vm.newProspect.Email.$error">
+                                <div ng-message="required">This is required.</div>
+                            </div>
+                        </md-input-container>
+                        <md-button type="submit" ng-click="vm.showSimpleToast()" class="submit" aria-label="submit" layout-align="center center">Submit</md-button>
+                    </form>
+                </div>
+                <div flex="50" class="contact" layout="column" layout-align="center center">
+                    <h3>Or contact us directly : </h3>
+                    <h3><a href="mailto:team@sendit.ai">team@sendit.ai</a></h3>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer_holder" layout="column" layout-align="center center">
+            <h2> Made with <md-icon md-svg-src="/images/heart.svg"></md-icon> in Paris </h2>
+            <h2> Follow us on: </h2>
+            <div layout="row">
+                <a ng-href="{{facebookSendit}}">
+                    <md-icon class="social facebook" md-svg-icon="/images/facebook_logo.svg"></md-icon>
+                </a>
+                <a ng-href="{{twitterSendit}}">
+                    <md-icon class="social twitter" md-svg-icon="/images/twitter_logo.svg"></md-icon>
+                </a>
+                <a ng-href="{{linkedinSendit}}">
+                    <md-icon class="social linkedin" md-svg-icon="/images/linkedin_logo.svg"></md-icon>
+                </a>
+            </div>
+            <h2> © 2016 sendit.ai </h2>
+        </footer>
+
+    </md-content>
+
+    <!-- <div ui-view=""></div> if we use routes-->
+
+</body>

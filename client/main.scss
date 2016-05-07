@@ -1,0 +1,487 @@
+$layout-xs: 600px;
+$layout-sm: 960px;
+$layout-md: 1280px;
+$theme-red: #fe6161;
+$theme-red-2: #fd4c4c;
+
+
+md-dialog{
+    color:black !important;
+}
+
+body {
+    color:black !important;
+    font-family: Lato;
+    font-weight: 300;
+    display: -webkit-flex;
+    button.md-button{
+        font-family:Lato;
+        font-weight: 300;
+    }
+}
+
+md-toolbar{
+    background-color: rgba(0,0,0,0) !important;
+    .active{
+        transition: 0.5s;
+        box-shadow: 0px 0px 8px 2px black;
+        background-color: white !important;
+        color:black !important;
+        .md-button{
+            color:black !important;
+            font-weight: 300 !important;
+        }
+        svg{
+            fill:black !important;
+        }
+        .md-button:hover{
+            background-color: rgba(0,0,0,0) !important;
+            font-weight:600 !important;
+            color: $theme-red !important;
+        }
+    }
+
+    .md-button:hover{
+        background-color: rgba(0,0,0,0) !important;
+        font-weight:600 !important;
+
+    }
+    .md-button{
+        font-weight: 500 !important;
+    }
+    .md-toolbar-tools{
+        height:70px !important;
+        max-height: 70px !important;
+    }
+}
+
+md-sidenav{
+    .md-button:hover{
+        background-color: rgba(0,0,0,0) !important;
+        font-weight:600 !important;
+        color: $theme-red !important;
+    }
+}
+
+.solution_holder{
+    padding-top: 70px !important;
+    padding-bottom: 40px;
+    min-height:100%;
+    min-width: 100%;
+    background-color:rgba(0,0,0,0);
+    color:white;
+    background-image:url(images/background_blurred.jpg) !important;
+    background-size: cover !important;
+    h1{
+        font-weight: 300;
+        font-size:60px;
+        text-align: center;
+        @media screen and (max-width: $layout-xs){
+            font-size:40px !important;
+            line-height: 50px;
+        }
+        @media screen and (max-width: $layout-sm){
+            font-size:45px !important;
+            line-height: 50px;
+        }
+
+        strong{
+            color: $theme-red !important;
+        }
+    }
+
+    .solution-container{
+        min-width: 450px !important;
+        margin: 30px;
+    }
+    .solution{
+        box-shadow: 5px 5px 100px 1px black;
+        width:100%;
+        height:auto;
+    }
+
+    // boutton try our demo
+    button{
+        background-color: rgba(0,0,0,0) !important;
+        border: solid;
+        border-color: white;
+        border-width: medium;
+        margin:30px;
+        width: 230px;
+        height: 70px;
+        color: white !important;
+        font-weight: 600 !important;
+        box-shadow: 0 0 0 0 !important;
+        border-radius: 0px !important;
+
+        .ng-scope{
+            font-size: 20px;
+        }
+    }
+    button:hover{
+        background-color:$theme-red !important;
+        color: white !important;
+        border: none;
+    }
+}
+
+
+.why_holder{
+    color:black !important;
+    // position:absolute;
+    //  overflow: hidden;
+    // height: auto;
+    min-height: 50%;
+    min-width: 100%;
+    .figure{
+        text-align: center;
+        // width:33%;
+        // height: 500px;
+    }
+    .txt{
+        margin:20px;
+        text-align: center;
+        font-weight: 300;
+        min-width: 200px;
+    }
+    strong{
+        color: $theme-red !important;
+        font-weight: bold;
+    }
+    md-icon{
+        color: $theme-red !important;
+        height:60px !important;
+        width:auto !important;
+        margin:20px;
+    }
+}
+
+
+.technology_holder{
+    color: white;
+    background-color: $theme-red !important;
+    padding:80px 0 80px 0 !important;
+
+    md-icon{
+        fill:black;
+    }
+
+    .technology_wrap{
+        display:block;
+    }
+
+    .content{
+        font-weight: 300;
+        text-align: left;
+        @media screen and (max-width: $layout-sm){
+            padding: 10px;
+        }
+    }
+    .title{
+        font-weight:500;
+        margin:0px;
+    }
+
+    .arrow_mobile{
+        width: 50px;
+        height:auto;
+        margin:40px;
+        @media screen and (min-width: $layout-sm){
+            display:none
+        }
+    }
+
+    .quote{
+        width: 350px;
+        height:auto;
+        @media screen and (max-width: $layout-sm){
+            width:450px !important;
+            height:auto;
+        }
+        .quotation{
+            margin-bottom:30px;
+        }
+        .quote-open{
+            width:200px;
+            height:auto;
+            margin-top:-30px;
+            @media screen and (max-width: $layout-sm){
+                width:100px !important;
+                height:auto;
+            }
+        }
+        .quote-close{
+            width:200px;
+            height:auto;
+            margin-bottom:-10px;
+            @media screen and (max-width: $layout-sm){
+                width:100px !important;
+                height:auto;
+            }
+        }
+    }
+
+    .arrow{
+        width:700px !important;
+        height:auto !important;
+        margin-left:150px;
+        @media screen and (max-width: $layout-sm){
+            display:none
+        }
+    }
+
+    .language_understanding{
+        .laius-wrap-1{
+            width:450px;
+            margin-right: 50px;
+            margin-left: 120px;
+            margin-top:30px;
+            @media screen and (max-width: $layout-sm){
+                margin:0px 0 0 0 !important;
+            }
+        }
+        .ner_icon{
+            width:300px;
+            height:auto;
+            margin-top:30px;
+            @media screen and (max-width: $layout-sm){
+                width:200px !important;
+                height:auto;
+                margin:0px !important;
+            }
+        }
+    }
+
+    .arrow-wrap-2{
+        .arrow-2{
+            width:300px !important;
+            height:auto !important;
+            margin: -55px 0 0 330px; //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                display:none
+            }
+        }
+    }
+
+    .customer_info{
+        .laius-wrap-2{
+            width:450px;
+            position:absolute;
+            margin: 50px 0 0 350px;  //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                margin:0px 0 0 0 !important;
+                position:relative;
+            }
+        }
+        .customer_info_icon{
+            width:250px;
+            height:auto;
+            margin: -40px 0 0 20px !important;  //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                width:200px !important;
+                height:auto;
+                margin:0px !important;
+            }
+        }
+    }
+
+    .arrow-wrap-3{
+        .arrow-3{
+            width:500px !important;
+            height:auto !important;
+            margin: 20px 0 0 120px; //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                display:none
+            }
+        }
+    }
+
+    .deep-learning{
+        .laius-wrap-3{
+            width:400px;
+            margin: -90px 0 0 0;
+            @media screen and (max-width: $layout-sm){
+                margin:0px 0 0 0 !important;
+            }
+        }
+        .deep-learning-icon{
+            width:500px;
+            height:auto;
+            margin: 30px 0 0 20px;  //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                margin:0px !important;
+            }
+        }
+    }
+
+    .arrow-wrap-4{
+        .arrow-4{
+            width:300px !important;
+            height:auto !important;
+            margin: -60px 0 0 90px; //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                display:none
+            }
+        }
+    }
+
+    .improving{
+        .laius-wrap-4{
+            width:450px;
+            position:absolute;
+            margin: 70px 0 0 300px;
+            @media screen and (max-width: $layout-sm){
+                margin:0px 0 0 0 !important;
+                position:relative;
+            }
+        }
+        .improving-icon{
+            width:250px;
+            height:auto;
+            margin: 20px 0 25px 5px;  //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                margin:0px !important;
+            }
+        }
+    }
+
+    .arrow-wrap-5{
+        .arrow-5{
+            width:350px !important;
+            height:auto !important;
+            margin: 0px 0 0 110px; //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                display:none
+            }
+        }
+    }
+
+    .interface{
+        .laius-wrap-5{
+            width:200px;
+            position:absolute;
+            margin: -90px 0 0 730px;
+            @media screen and (max-width: $layout-sm){
+                margin:0px 0 0 0 !important;
+                position:relative;
+            }
+        }
+        .user-interface-icon{
+            width:180px;
+            height:auto;
+            margin: -110px 0 0 500px;  //top right bottom left
+            @media screen and (max-width: $layout-sm){
+                margin:0px !important;
+            }
+        }
+    }
+}
+
+
+
+
+.team_holder{
+    color:black !important;
+    min-height: 50%;
+    min-width: 100%;
+    md-icon{
+        margin:20px;
+        width:100px !important;
+        height: auto !important;
+    }
+    h2{
+        margin:20px;
+        text-align: center;
+        font-weight: 300;
+    }
+    strong{
+        color: $theme-red !important;
+        font-weight: bold;
+    }
+    .linkedin{
+        width:25px !important;
+        height:auto;
+        margin:0 20px 0 20px;
+    }
+    .twitter{
+        width:25px !important;
+        height:auto !important;
+        margin:2px 20px 0 20px;
+    }
+    .github{
+        width:25px !important;
+        height:auto !important;
+        margin:0px 20px 0 20px;
+    }
+    .figure{
+        margin: 40px 0 40px 0;
+    }
+    h4{
+        text-align:center;
+        margin-top:0px;
+        font-weight:300;
+        font-size:13px;
+    }
+}
+
+
+
+
+.contact_holder{
+    background-color: $theme-red !important;
+    color:white !important;
+    min-height: 50%;
+    min-width: 100%;
+    h2{
+        text-align: center;
+        padding-top:50px;
+        font-weight: 300;
+        margin:0px;
+    }
+    h3{
+        font-weight: 300;
+        a{
+            color: white;
+        }
+    }
+    .email{
+        margin: 40px 0 40px 0;
+        .md-button{
+            margin:0px !important;
+            border: solid;
+            border-color: white;
+            border-width: thin;
+        }
+        .md-input{
+            color:white;
+        }
+        md-input-container{
+            margin:0px;
+        }
+    }
+    .contact{
+        margin: 40px 0 40px 0;
+    }
+    md-input-container{
+        label{
+            color:white !important
+        }
+    }
+    md-icon{
+        margin:0px !important;
+    }
+}
+
+
+.footer_holder{
+    background-color: #303030 !important;
+    color:white !important;
+    min-height:43% !important;
+    h2{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .social{
+        margin:20px;
+    }
+}

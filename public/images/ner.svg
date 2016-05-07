@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-68 262.9 459 316" style="enable-background:new -68 262.9 459 316;" xml:space="preserve">
+<style type="text/css">
+	.ht0{fill:#FFFFFF;}
+	.ht1{font-family:'Tahoma-Bold'; font-variant: small-caps; font-size:34px !important;}
+	.ht2{font-size:22.5px;}
+	.ht3{font-family:'Tahoma';}
+</style>
+<g>
+	<g>
+		<path class="ht0" d="M25.5,262.9h58.6c12.9,0,23.4,10.5,23.4,23.4v1c0,12.9-10.5,23.4-23.4,23.4H25.5c-12.9,0-23.4-10.5-23.4-23.4
+			v-1C2.2,273.3,12.6,262.9,25.5,262.9z"/>
+		<text transform="matrix(0.7 0 0 0.7 25 291.8899)" class="ht1 ht2">intent</text>
+		<path class="ht0" d="M217.3,292.6c-2.7,0-4.9-1.9-5.3-4.5H106.6v-1.8h105.4c0.4-2.6,2.6-4.5,5.3-4.5c3,0,5.4,2.4,5.4,5.4
+			C222.7,290.2,220.2,292.6,217.3,292.6z"/>
+		<text transform="matrix(1 0 0 1 249.9999 292.8899)" class="ht0 ht3 ht2">raising issue</text>
+	</g>
+	<g>
+		<path class="ht0" d="M46.2,316h37.9c12.9,0,23.4,10.5,23.4,23.4v1c0,12.9-10.5,23.4-23.4,23.4H46.2c-12.9,0-23.4-10.5-23.4-23.4
+			v-1C22.9,326.5,33.3,316,46.2,316z"/>
+		<text transform="matrix(0.7 0 0 0.7 42 347.8899)" class="ht1 ht2">date</text>
+		<path class="ht0" d="M217.3,345.7c-2.7,0-4.9-1.9-5.3-4.5H106.6v-1.8h105.4c0.4-2.6,2.6-4.5,5.3-4.5c3,0,5.4,2.4,5.4,5.4
+			C222.7,343.3,220.2,345.7,217.3,345.7z"/>
+		<text transform="matrix(1 0 0 1 249.9999 345.8899)" class="ht0 ht3 ht2">12 mars 2016</text>
+	</g>
+	<g>
+		<path class="ht0" d="M11.2,370h73c12.9,0,23.4,10.5,23.4,23.4v1c0,12.9-10.5,23.4-23.4,23.4h-73c-12.9,0-23.4-10.5-23.4-23.4v-1
+			C-12.2,380.5-1.8,370,11.2,370z"/>
+		<text transform="matrix(0.7 0 0 0.7 8 399.8899)" class="ht1 ht2">product</text>
+		<path class="ht0" d="M217.3,399.7c-2.7,0-4.9-1.9-5.3-4.5H106.6v-1.8h105.4c0.4-2.6,2.6-4.5,5.3-4.5c3,0,5.4,2.4,5.4,5.4
+			C222.7,397.3,220.2,399.7,217.3,399.7z"/>
+		<text transform="matrix(1 0 0 1 249.9999 399.8899)" class="ht0 ht3 ht2">book</text>
+	</g>
+	<g>
+		<path class="ht0" d="M-44.6,424H84.1c12.9,0,23.4,10.5,23.4,23.4v1c0,12.9-10.5,23.4-23.4,23.4H-44.6c-12.9,0-23.4-10.5-23.4-23.4
+			v-1C-68,434.5-57.5,424-44.6,424z"/>
+		<text transform="matrix(0.7 0 0 0.7 -48 453.8899)" class="ht1 ht2">order</text>
+		<text transform="matrix(1 0 0 1 8.6172 453.8899)" class="ht1 ht2"> </text>
+		<text transform="matrix(0.7 0 0 0.7 15.209 453.8899)" class="ht1 ht2">number</text>
+		<path class="ht0" d="M217.3,453.8c-2.7,0-4.9-1.9-5.3-4.5H106.6v-1.8h105.4c0.4-2.6,2.6-4.5,5.3-4.5c3,0,5.4,2.4,5.4,5.4
+			C222.7,451.3,220.2,453.8,217.3,453.8z"/>
+		<text transform="matrix(1 0 0 1 249.9999 453.8899)" class="ht0 ht3 ht2">17 A 32</text>
+	</g>
+	<g>
+		<path class="ht0" d="M-6.8,477.2h91c12.9,0,23.4,10.5,23.4,23.4v1c0,12.9-10.5,23.4-23.4,23.4h-91c-12.9,0-23.4-10.5-23.4-23.4v-1
+			C-30.2,487.6-19.7,477.2-6.8,477.2z"/>
+		<text transform="matrix(0.7 0 0 0.7 -10 506.8899)" class="ht1 ht2">sentiment</text>
+		<path class="ht0" d="M217.3,506.9c-2.7,0-4.9-1.9-5.3-4.5H106.6v-1.8h105.4c0.4-2.6,2.6-4.5,5.3-4.5c3,0,5.4,2.4,5.4,5.4
+			C222.7,504.4,220.2,506.9,217.3,506.9z"/>
+		<text transform="matrix(1 0 0 1 249.9999 507.8899)" class="ht0 ht3 ht2">angry</text>
+	</g>
+	<g>
+		<path class="ht0" d="M41.7,531.2h42.4c12.9,0,23.4,10.5,23.4,23.4v1c0,12.9-10.5,23.4-23.4,23.4H41.7c-12.9,0-23.4-10.5-23.4-23.4
+			v-1C18.4,541.6,28.8,531.2,41.7,531.2z"/>
+		<text transform="matrix(0.7 0 0 0.7 37 560.8898)" class="ht1 ht2">issue</text>
+		<path class="ht0" d="M217.3,560.9c-2.7,0-4.9-1.9-5.3-4.5H106.6v-1.8h105.4c0.4-2.6,2.6-4.5,5.3-4.5c3,0,5.4,2.4,5.4,5.4
+			C222.7,558.5,220.2,560.9,217.3,560.9z"/>
+		<text transform="matrix(1 0 0 1 249.9999 561.8898)" class="ht0 ht3 ht2">not delivered</text>
+	</g>
+</g>
+</svg>

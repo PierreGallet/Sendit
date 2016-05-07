@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="320" height="280" viewBox="0 0 320 280">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-6 {
+        fill: #c6c6c6;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .clss-3, .clss-4 {
+        font-size: 25px;
+        fill: #000000
+      }
+
+      .clss-4, .cls-6, .cls-9 {
+        font-family: "Tahoma-Bold";
+        font-weight: bold;
+      }
+
+      .clss-4, .cls-9 {
+        font-variant: small-caps;
+      }
+
+      .cls-5, .cls-6 {
+        font-size: 12px;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        stroke: #c6c6c6;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        filter: url(#color-overlay-1);
+      }
+
+      .cls-8, .cls-9 {
+        font-size: 20px;
+      }
+
+      .cls-10, .cls-11 {
+        font-size: 15px;
+      }
+
+      .cls-11 {
+        font-family: "Tahoma";
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <g>
+    <rect width="320" height="280" class="cls-1"/>
+    <path d="M0.000,77.424 L0.000,76.364 L320.000,76.364 L320.000,77.424 L0.000,77.424 " class="cls-2"/>
+    <text transform="translate(94 39) scale(1.06 1.06)" class="clss-3"><tspan class="clss-4">John Smith</tspan></text>
+    <text transform="translate(95 58) scale(1.06 1.06)" class="cls-5"><tspan class="cls-6">john@smith.com</tspan></text>
+    <g style="fill: #fff; filter: url(#color-overlay-1)">
+      <circle cx="46.625" cy="38.17" r="25.437" id="circle-1" class="cls-7"/>
+    </g>
+    <use xlink:href="#circle-1" style="stroke: #c6c6c6; filter: none; fill: none"/>
+    <text transform="translate(21 110) scale(1.06 1.06)" class="cls-8"><tspan class="cls-9">last order</tspan></text>
+    <text transform="translate(145 110) scale(1.06 1.06)" class="cls-10"><tspan class="cls-11">book, 28 of febuary</tspan></text>
+    <text transform="translate(21 151) scale(1.06 1.06)" class="cls-8"><tspan class="cls-9">status</tspan></text>
+    <text transform="translate(105 151) scale(1.06 1.06)" class="cls-10"><tspan class="cls-11">pending, item not found</tspan></text>
+    <text transform="translate(21 187) scale(1.06 1.06)" class="cls-8"><tspan class="cls-9">client since</tspan></text>
+    <text transform="translate(152 187) scale(1.06 1.06)" class="cls-10"><tspan class="cls-11">23/01/2016</tspan></text>
+    <text transform="translate(21 223) scale(1.06 1.06)" class="cls-8"><tspan class="cls-9">total number of orders</tspan></text>
+    <text transform="translate(263 223) scale(1.06 1.06)" class="cls-10"><tspan class="cls-11">4</tspan></text>
+    <text transform="translate(21 257) scale(1.06 1.06)" class="cls-8"><tspan class="cls-9">most ordered</tspan></text>
+    <text transform="translate(172 257) scale(1.06 1.06)" class="cls-10"><tspan class="cls-11">books</tspan></text>
+  </g>
+</svg>
