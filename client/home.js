@@ -13,19 +13,6 @@ app.controller('home', function($scope, $window, $reactive, $location, $anchorSc
         $scope.linkedinP = 'https://fr.linkedin.com/in/pierregallet';
         $scope.linkedinM = 'https://fr.linkedin.com/in/maxime-le-dantec-44009986/en';
         $scope.boolChangeClass = false;
-        // $scope.myHeader = "You just have to send it!"
-        // $timeout(function () {
-        //     $scope.myHeader = "How are you today?";
-        // }, 2000);
-
-        // $scope.gotoAnchor = function(x) {
-        //     var newHash = x;
-        //     if ($location.hash() !== newHash){
-        //         $location.hash(x);
-        //     } else{
-        //         $anchorScroll(x);
-        //     }
-        // };
 
         // to send an email to a prospect
         this.sendMail = function () {

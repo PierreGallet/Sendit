@@ -1,14 +1,21 @@
 <head>
     <base href="/">
+
+    <title> Sendit</title>
+    <meta name="description" content="Well, here your are" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
 <body layout="column" ng-controller="home as vm">
     <!-- <div ng-app="socially" ng-strict-di="">
     ng-app="socially" should be there if app.js do not Parties = new Mongo.Collection('parties');contains function onReady() for cross plateforms management
     ng-strict-di="" is there in case there is a minification problem, we will find in already in development and not only after minification in production -->
-
+    <script> new WOW().init(); </script>
     <md-toolbar>
         <div class="md-toolbar-tools" ng-class="{'active' : boolChangeClass}">
             <span flex="5"></span>
@@ -40,13 +47,13 @@
 
 
         <section id="solution" class="solution_holder" layout="column">
-            <div class="title" flex="40" layout="row" layout-align="center center" layout-margin>
+            <div class="title wow bounceInDown animated" flex="40" layout="row" layout-align="center center" layout-margin>
                 <h1 class="md-display-3"> You just have to Send <strong>It</strong></h1>
             </div>
 
-            <div class="description" flex="60"  layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-align-xs="center center" layout-margin>
-                <div flex="50" flex-sm="100" layout="row" layout-align="center center" class="solution-container">
-                    <md-icon md-svg-icon="/images/solution.svg" aria-label="solution" class="solution"></md-icon>
+            <div class="description wow fadeInLeft animated" flex="60"  layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-align-xs="center center" layout-margin>
+                <div flex="50" flex-sm="100" layout="row" layout-align="center center" class="solution-container wow fadeInLeft animated">
+                    <img ng-src="/images/Chat-demo.png" aria-label="solution" class="solution"></img>
                 </div>
                 <div flex="50" layout="column" layout-align="center center" layout-margin>
                     <h1 class="md-display-2">When <strong>AI</strong> empowers <br/> customer relationship</h1>
@@ -63,11 +70,11 @@
                 <h3 class="txt"><strong>Gain time</strong>, <br/> automatically push messages</h3>
             </div>
             <div flex="33" class="figure lightbulb"  layout="column" layout-align="center center">
-                <md-icon md-svg-icon="/images/artificial_intelligence.svg" aria-label="lightbulb"></md-icon>
+                <md-icon md-svg-icon="/images/AI.svg" aria-label="lightbulb"></md-icon>
                 <h3 class="txt">Allow <strong>artificial intelligence</strong> to <br/> turn your operators experts</h3>
             </div>
             <div flex="33" class="figure smiley"  layout="column" layout-align="center center">
-                <md-icon md-svg-icon="/images/happy.svg" aria-label="smiley"></md-icon>
+                <md-icon md-svg-icon="/images/sat.svg" aria-label="smiley"></md-icon>
                 <h3 class="txt">Improve your <br/> <strong>customer's satisfaction</strong></h3>
             </div>
         </section>
