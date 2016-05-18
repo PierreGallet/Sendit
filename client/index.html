@@ -4,18 +4,17 @@
     <title> Sendit</title>
     <meta name="description" content="Well, here your are" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
 <body layout="column" ng-controller="home as vm">
     <!-- <div ng-app="socially" ng-strict-di="">
     ng-app="socially" should be there if app.js do not Parties = new Mongo.Collection('parties');contains function onReady() for cross plateforms management
     ng-strict-di="" is there in case there is a minification problem, we will find in already in development and not only after minification in production -->
-    <script> new WOW().init(); </script>
+
     <md-toolbar>
         <div class="md-toolbar-tools" ng-class="{'active' : boolChangeClass}">
             <span flex="5"></span>
@@ -26,7 +25,7 @@
             <md-button hide-xs hide-sm scroll-to="technology" aria-label="Technology">Technology</md-button>
             <md-button hide-xs hide-sm scroll-to="team" aria-label="Team">Team</md-button>
             <md-button hide-xs hide-sm scroll-to="contact" aria-label="Contact">Contact</md-button>
-            <md-button hide-gt-sm ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+            <md-button hide-gt-sm ng-click="toggleRight()" ng-hide="isOpenRight()">
                 <md-icon md-svg-icon="/images/menu.svg" aria-label="solution" class="solution"></md-icon>
             </md-button>
             <span flex="5"></span>
@@ -43,8 +42,22 @@
         </div>
     </md-sidenav>
 
-    <md-content layout-fill style="position:absolute !important; top:0px;" scroll>
+    <md-content layout-fill style="position:absolute !important; top:0px;" scroll class="scroll">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+                {
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // change this if you are not using animate.css
+                    offset:       0,          // default
+                    mobile:       true,       // keep it on mobile
+                    live:         true        // track if element updates
+                    scrollContainer: '.scroll'
+                  }
+            )
+            wow.init();
+       </script>
 
         <section id="solution" class="solution_holder" layout="column">
             <div class="title wow bounceInDown animated" flex="40" layout="row" layout-align="center center" layout-margin>
@@ -65,15 +78,15 @@
 
 
         <section id="why" class="why_holder" layout="row" layout-xs="column" layout-align="center center">
-            <div flex="33" class="figure watch" layout="column" layout-align="center center">
+            <div flex="33" class="figure watch wow bounceInLeft animated" layout="column" layout-align="center center">
                 <md-icon md-svg-icon="/images/time.svg" aria-label="watch"></md-icon>
                 <h3 class="txt"><strong>Gain time</strong>, <br/> automatically push messages</h3>
             </div>
-            <div flex="33" class="figure lightbulb"  layout="column" layout-align="center center">
+            <div flex="33" class="figure lightbulb wow flipInX animated"  layout="column" layout-align="center center">
                 <md-icon md-svg-icon="/images/AI.svg" aria-label="lightbulb"></md-icon>
                 <h3 class="txt">Allow <strong>artificial intelligence</strong> to <br/> turn your operators experts</h3>
             </div>
-            <div flex="33" class="figure smiley"  layout="column" layout-align="center center">
+            <div flex="33" class="figure smiley wow bounceInRight animated"  layout="column" layout-align="center center">
                 <md-icon md-svg-icon="/images/sat.svg" aria-label="smiley"></md-icon>
                 <h3 class="txt">Improve your <br/> <strong>customer's satisfaction</strong></h3>
             </div>
@@ -261,7 +274,7 @@
                 </div>
                 <div flex="50" class="contact" layout="column" layout-align="center center">
                     <h3>Or contact us directly : </h3>
-                    <h3><a href="mailto:team@sendit.ai">team@sendit.ai</a></h3>
+                    <h3><a href="mailto:team@sendit.ai">pierrehgallet@gmail.com</a></h3>
                 </div>
             </div>
         </section>

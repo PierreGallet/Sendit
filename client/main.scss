@@ -20,6 +20,12 @@ body {
     }
 }
 
+md-content{
+    overflow-y: scroll; /* has to be scroll, not auto */
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
 md-toolbar{
     background-color: rgba(0,0,0,0) !important;
     .active{
@@ -57,10 +63,15 @@ md-toolbar{
 }
 
 md-sidenav{
+    width:100%;
+    opacity:0.8 !important;
     .md-button:hover{
         background-color: rgba(0,0,0,0) !important;
         font-weight:600 !important;
         color: $theme-red !important;
+    }
+    .md-button{
+        font-size:20px !important;
     }
 }
 
