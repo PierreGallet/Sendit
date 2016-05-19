@@ -1,9 +1,10 @@
 $layout-xs: 600px;
 $layout-sm: 960px;
 $layout-md: 1280px;
+$theme-red-4: #0e293c;
+$theme-red-3: #fd4c4c;
 $theme-red: #2c9dde;
-$theme-red-2: #fd4c4c;
-
+$theme-red-2: #fb5d68;
 
 md-dialog{
     color:black !important;
@@ -11,7 +12,7 @@ md-dialog{
 
 body {
     color:black !important;
-    font-family: Lato;
+    font-family: Lato, Tahoma;
     font-weight: 300;
     display: -webkit-flex;
     button.md-button{
@@ -168,6 +169,9 @@ md-sidenav{
         height:120px !important;
         width:auto !important;
         margin:20px;
+        svg{
+            fill: $theme-red;
+        }
     }
 }
 
@@ -399,9 +403,9 @@ md-sidenav{
     color:black !important;
     min-height: 50%;
     min-width: 100%;
-    md-icon{
+    img{
         margin:20px;
-        width:100px !important;
+        width:150px !important;
         height: auto !important;
     }
     h2{
