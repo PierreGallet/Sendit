@@ -2,12 +2,26 @@
     <base href="/">
 
     <title> Sendit</title>
-    <meta name="description" content="Well, here your are" />
+    <meta name="description" content="Well, here your are">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // change this if you are not using animate.css
+                offset:       -20,          // default
+                mobile:       true,       // keep it on mobile
+                live:         true,      // track if element updates
+                scrollContainer: '.scrollheader'
+            }
+        )
+        wow.init();
+   </script>
 </head>
 
 <body layout="column" ng-controller="home as vm">
@@ -42,35 +56,20 @@
         </div>
     </md-sidenav>
 
-    <md-content layout-fill style="position:absolute !important; top:0px;" scroll class="scroll">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script>
-            wow = new WOW(
-                {
-                    boxClass:     'wow',      // default
-                    animateClass: 'animated', // change this if you are not using animate.css
-                    offset:       0,          // default
-                    mobile:       true,       // keep it on mobile
-                    live:         true        // track if element updates
-                    scrollContainer: '.scroll'
-                  }
-            )
-            wow.init();
-       </script>
+    <div layout-fill scroll style="position:absolute !important; top:0px;" class="parent">
 
         <section id="solution" class="solution_holder" layout="column">
-            <div class="title wow bounceInDown animated" flex="40" layout="row" layout-align="center center" layout-margin>
+            <div class="title wow bounceInDown" flex="30" flex-xs="none" flex-sm="none" layout="row" layout-align="center center" layout-margin>
                 <h1 class="md-display-3"> You just have to Send <strong>It</strong></h1>
             </div>
 
-            <div class="description wow fadeInLeft animated" flex="60"  layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-align-xs="center center" layout-margin>
-                <div flex="50" flex-sm="100" layout="row" layout-align="center center" class="solution-container wow fadeInLeft animated">
-                    <img ng-src="/images/Chat-demo.png" aria-label="solution" class="solution"></img>
+            <div class="description" flex="70"  flex-xs="none" flex-sm="none" layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-align-xs="center center" layout-margin>
+                <div flex="50" flex-sm="5" flex-xs="100" layout="row" layout-align="center center" class="solution-container">
+                    <img ng-src="/images/Chat-demo.png" aria-label="solution" class="solution wow fadeInLeft"></img>
                 </div>
-                <div flex="50" layout="column" layout-align="center center" layout-margin>
-                    <h1 class="md-display-2">When <strong>AI</strong> empowers <br/> customer relationship</h1>
-                    <md-button class="md-raised md-primary" scroll-to="contact" aria-label="tryourdemo">Request a demo</md-button>
+                <div flex="50" flex-sm="80" flex-xs="80" layout="column" class="solution-explainer" layout-align="center center" layout-margin>
+                    <h1 flex="60" class="md-display-2 wow flipInX">When <strong>AI</strong> empowers <br/> customer relationship</h1>
+                    <md-button flex="40" class="md-raised md-primary wow flipInX" scroll-to="contact" aria-label="tryourdemo">Request a demo</md-button>
                 </div>
             </div>
         </section>
@@ -78,15 +77,15 @@
 
 
         <section id="why" class="why_holder" layout="row" layout-xs="column" layout-align="center center">
-            <div flex="33" class="figure watch wow bounceInLeft animated" layout="column" layout-align="center center">
-                <md-icon md-svg-icon="/images/time.svg" aria-label="watch"></md-icon>
+            <div flex="33" class="figure watch wow zoomInLeft" layout="column" layout-align="center center">
+                <md-icon md-svg-icon="/images/time.svg" class="wow fadeInLeft" aria-label="watch"></md-icon>
                 <h3 class="txt"><strong>Gain time</strong>, <br/> automatically push messages</h3>
             </div>
-            <div flex="33" class="figure lightbulb wow flipInX animated"  layout="column" layout-align="center center">
+            <div flex="33" -webkit-flex="33" class="figure lightbulb wow zoomInDown"  layout="column" layout-align="center center">
                 <md-icon md-svg-icon="/images/AI.svg" aria-label="lightbulb"></md-icon>
                 <h3 class="txt">Allow <strong>artificial intelligence</strong> to <br/> turn your operators experts</h3>
             </div>
-            <div flex="33" class="figure smiley wow bounceInRight animated"  layout="column" layout-align="center center">
+            <div flex="33" -webkit-flex="33" class="figure smiley wow zoomInRight"  layout="column" layout-align="center center">
                 <md-icon md-svg-icon="/images/sat.svg" aria-label="smiley"></md-icon>
                 <h3 class="txt">Improve your <br/> <strong>customer's satisfaction</strong></h3>
             </div>
@@ -94,7 +93,7 @@
 
 
         <section id="technology" class="technology_holder" color="white" layout-align="none center" layout="column">
-            <div class="technology-wrap" layout="column" layout-align-sm="center center" layout-align-xs="center center">
+            <div class="technology-wrap wow slideInUp" layout="column" layout-align-sm="center center" layout-align-xs="center center">
                 <div class="quote" layout="row" layout-align="center center">
                     <md-icon class="quote-open" md-svg-icon="/images/quote_open.svg" aria-label="fleche"></md-icon>
                     <h3 class="quotation content">
@@ -195,7 +194,7 @@
         </section>
 
         <section id="team" class="team_holder" layout="row" layout-xs="column" layout-align="center center">
-            <div flex="50" class="figure" layout="column" layout-align="center center">
+            <div flex="50" class="figure slideInLeft wow" layout="column" layout-align="center center">
                 <img ng-src="/images/pierre.png" aria-label="pierre"/>
                 <h3 class="txt">
                     <strong>Pierre H. Gallet</strong><br/>
@@ -213,7 +212,7 @@
                     </a>
                 </div>
             </div>
-            <div flex="50" class="figure"  layout="column" layout-align="center center">
+            <div flex="50" class="figure slideInRight wow"  layout="column" layout-align="center center">
                 <img ng-src="/images/max.png" aria-label="maxime"/>
                 <h3 class="txt"><strong>Maxime Le Dentec</strong><br/>
                     <h4>Ecole Centrale Paris</h4>
@@ -231,9 +230,9 @@
 
         <section id="contact" class="contact_holder" layout="column">
 
-            <h2> INTERESTED BY OUR SOLUTIONS? </h2>
+            <h2 class="wow flipInX"> INTERESTED BY OUR SOLUTIONS? </h2>
             <div layout="row" layout-xs="column" layout-align="center start" layout-align-xs="center center" layout-margin>
-                <div flex="50" class="email" layout="column" layout-align="center center" >
+                <div flex="50" class="email wow bounceInUp" layout="column" layout-align="center center" >
                     <h3>Leave us your contact : </h3>
                     <form ng-submit="vm.addProspect()" layout="column" layout-align="center center">
                         <div layout="row">
@@ -272,7 +271,7 @@
                         <md-button type="submit" ng-click="vm.showSimpleToast()" class="submit" aria-label="submit" layout-align="center center">Submit</md-button>
                     </form>
                 </div>
-                <div flex="50" class="contact" layout="column" layout-align="center center">
+                <div flex="50" class="contact wow bounceInUp" layout="column" layout-align="center center">
                     <h3>Or contact us directly : </h3>
                     <h3><a href="mailto:pierrehgallet@gmail.com">pierrehgallet@gmail.com</a></h3>
                 </div>
@@ -295,8 +294,8 @@
             </div>
             <h2> © 2016 sendit.ai </h2>
         </footer>
-
-    </md-content>
+    </div>
+</div>
 
     <!-- <div ui-view=""></div> if we use routes-->
 

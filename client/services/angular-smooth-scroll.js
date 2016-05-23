@@ -46,8 +46,9 @@
  	        if(containerPresent) {
  	            return container.scrollTop;
  	        } else {
- 	            if(angular.element("md-content")[0].scrollTop) {
- 	                return angular.element("md-content")[0].scrollTop;
+				var queryResult = element[0].querySelector('.parent');
+ 	            if(angular.element(queryResult)[0].scrollTop) {
+ 	                return angular.element(queryResult)[0].scrollTop;
  	            } else {
  	                return document.documentElement.scrollTop;
  	            }
@@ -146,7 +147,8 @@
  	            if(containerPresent) {
  	                container.scrollTop = position;
  	            } else {
- 	                angular.element("md-content")[0].scrollTop = position; // this is what actually scroll the md-content
+					var queryResult = element[0].querySelector('.parent');
+ 	                angular.element(queryResult)[0].scrollTop = position; // this is what actually scroll the md-content
  	            }
  	            stopAnimation();
  	        };

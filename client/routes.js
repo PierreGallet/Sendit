@@ -6,7 +6,7 @@ angular.module('sendit')
 
       $stateProvider
         .state('home', {
-            url: '/home',
+            url: '/',
             template: '<home></home>'
         });
         // .state('partyDetails', {
@@ -24,7 +24,7 @@ angular.module('sendit')
         //     }
         // });
 
-      $urlRouterProvider.otherwise("/home"); // redirection when url not in our routes
+      $urlRouterProvider.otherwise("/"); // redirection when url not in our routes
     })
     .run(function ($rootScope, $state) { // redirection to home if not logged
         $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {

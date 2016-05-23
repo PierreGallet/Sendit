@@ -12,22 +12,19 @@ md-dialog{
 
 body {
     color:black !important;
-    font-family: Lato, Tahoma;
+    font-family: Tahoma;
     font-weight: 300;
     display: -webkit-flex;
+    background-attachment: fixed !important;
+    overflow-x: hidden;
     button.md-button{
-        font-family:Lato;
+        font-family: Tahoma;
         font-weight: 300;
     }
 }
 
-md-content{
-    overflow-y: scroll; /* has to be scroll, not auto */
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-}
-
 md-toolbar{
+    position:fixed;
     background-color: rgba(0,0,0,0) !important;
     .active{
         transition: 0.5s;
@@ -64,6 +61,7 @@ md-toolbar{
 }
 
 md-sidenav{
+    position: fixed;
     width:100%;
     opacity:0.8 !important;
     .md-button:hover{
@@ -76,25 +74,33 @@ md-sidenav{
     }
 }
 
+
 .solution_holder{
     padding-top: 70px !important;
     padding-bottom: 40px;
-    min-height:100%;
-    min-width: 100%;
+    height:100%;
+    width: auto;
     background-color:rgba(0,0,0,0);
     color:white;
     background-image:url(images/background_blurred.jpg) !important;
-    background-size: cover !important;
+    background-size: cover ;
+    @media screen and (max-width: $layout-xs){
+        background-size: cover;
+        height:800px !important; // pour fixer la taille de la page de cover sur mobile
+    }
+    @media screen and (max-width: $layout-sm){
+        height:1200px !important;
+    }
     h1{
         font-weight: 300;
-        font-size:60px;
+        font-size:50px;
         text-align: center;
         @media screen and (max-width: $layout-xs){
-            font-size:40px !important;
+            font-size:30px !important;
             line-height: 50px;
         }
         @media screen and (max-width: $layout-sm){
-            font-size:45px !important;
+            font-size:40px;
             line-height: 50px;
         }
 
@@ -103,17 +109,39 @@ md-sidenav{
         }
     }
 
+    .title{
+        -webkit-flex:30;
+        margin:10px;
+        @media screen and (max-width: $layout-xs){
+            max-height: 100px !important;
+        }
+    }
+    .description{
+        -webkit-flex:70;
+    }
     .solution-container{
-        min-width: 450px !important;
-        margin: 30px;
-        visibility: visible;
-        animation: fadeInLeft !important;
-        -webkit-animation: fadeInLeft !important;
+        width: 90% !important;
+        margin: 30px !important;
+        -webkit-flex:50;
+        @media screen and (max-width: $layout-xs){
+            -webkit-flex:100;
+        }
+
+    }
+    .solution-explainer{
+        // -webkit-flex: 50;
+        .md-display-2{
+            -webkit-flex: 60;
+        }
+        .md-raised{
+            -webkit-flex: 40;
+        }
+        @media screen and (max-width: $layout-xs){
+            -webkit-flex:100;
+        }
     }
     .solution{
         box-shadow: 5px 5px 100px 1px black;
-        width:100%;
-        height:auto;
     }
 
     // boutton try our demo
@@ -122,9 +150,10 @@ md-sidenav{
         border: solid;
         border-color: $theme-red;
         border-width: medium;
-        margin:30px;
-        width: 230px;
-        height: 70px;
+        margin: 30px;
+        width: 230px !important;
+        height: 70px !important;
+        max-height:70px !important;
         box-shadow: 0 0 0 0 !important;
         box-shadow: inset 0 0 0 0 $theme-red !important;
         color: $theme-red !important;
@@ -142,6 +171,7 @@ md-sidenav{
 
 
 .why_holder{
+    padding:20px 20px 20px 20px;
     color:black !important;
     // position:absolute;
     //  overflow: hidden;
@@ -150,6 +180,7 @@ md-sidenav{
     min-width: 100%;
     .figure{
         text-align: center;
+        -webkit-flex: 33;
         // width:33%;
         // height: 500px;
     }
@@ -179,7 +210,7 @@ md-sidenav{
 .technology_holder{
     color: white;
     background-color: $theme-red !important;
-    padding:80px 0 80px 0 !important;
+    padding:80px 20px 80px 20px !important;
 
     md-icon{
         fill:black;
@@ -251,6 +282,7 @@ md-sidenav{
 
     .language_understanding{
         .laius-wrap-1{
+            text-align: center;
             width:450px;
             margin-right: 50px;
             margin-left: 120px;
@@ -284,6 +316,7 @@ md-sidenav{
 
     .customer_info{
         .laius-wrap-2{
+            text-align: center;
             width:450px;
             position:absolute;
             margin: 50px 0 0 350px;  //top right bottom left
@@ -317,6 +350,7 @@ md-sidenav{
 
     .deep-learning{
         .laius-wrap-3{
+            text-align: center;
             width:400px;
             margin: -90px 0 0 0;
             @media screen and (max-width: $layout-sm){
@@ -346,6 +380,7 @@ md-sidenav{
 
     .improving{
         .laius-wrap-4{
+            text-align: center;
             width:450px;
             position:absolute;
             margin: 70px 0 0 300px;
@@ -434,6 +469,7 @@ md-sidenav{
     }
     .figure{
         margin: 40px 0 40px 0;
+        -webkit-flex:50;
     }
     h4{
         text-align:center;
@@ -464,6 +500,7 @@ md-sidenav{
         }
     }
     .email{
+        -webkit-flex:50;
         margin: 40px 0 40px 0;
         .md-button{
             margin:0px !important;
@@ -488,6 +525,7 @@ md-sidenav{
         }
     }
     .contact{
+        -webkit-flex:50;
         margin: 40px 0 40px 0;
     }
     md-input-container{
@@ -504,7 +542,7 @@ md-sidenav{
 .footer_holder{
     background-color: #303030 !important;
     color:white !important;
-    min-height:43% !important;
+    min-height:40% !important;
     h2{
         font-weight: 300;
         font-size: 20px;

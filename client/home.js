@@ -103,8 +103,9 @@ app.controller('home', function($scope, $window, $reactive, $location, $anchorSc
 // to show header background when scrolling
 app.directive("scroll", function () {
         return function($scope, $element, $attrs) {
-            angular.element("md-content").bind("scroll", function() { // $window is not scrollable so we use md-content instead!
-                 if (angular.element("md-content")[0].scrollTop > 0) {
+            var queryResult = element[0].getElementsByClassName('.parent');
+            angular.element(queryResult).bind("scroll", function() { // $window is not scrollable so we use md-content instead!
+                 if (angular.element(queryResult)[0].scrollTop > 0) {
                      $scope.boolChangeClass = true;
                  } else {
                      $scope.boolChangeClass = false;
