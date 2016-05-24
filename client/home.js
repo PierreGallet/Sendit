@@ -3,7 +3,6 @@ var app = angular.module('sendit');
 // with ng-annotate, not need for [$scope, $window, $otherdependency] in the dependency injection.
 app.controller('home', function($scope, $window, $reactive, $location, $anchorScroll, $timeout, $mdDialog, $mdToast, $mdSidenav, $log){
         $reactive(this).attach($scope);
-
         $scope.facebookSendit = 'https://www.facebook.com/youjustsendit/?fref=ts';
         $scope.twitterSendit = '';
         $scope.linkedinSentit = '';
@@ -97,15 +96,25 @@ app.controller('home', function($scope, $window, $reactive, $location, $anchorSc
               $log.debug("close right is done");
             });
         };
+        wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // change this if you are not using animate.css
+                offset:       -20,          // default
+                mobile:       true,       // keep it on mobile
+                live:         true,      // track if element updates
+                scrollContainer: '.parent'
+            }
+        );
+        wow.init();
 });
 
 
 // to show header background when scrolling
 app.directive("scroll", function () {
         return function($scope, $element, $attrs) {
-            var queryResult = element[0].getElementsByClassName('.parent');
-            angular.element(queryResult).bind("scroll", function() { // $window is not scrollable so we use md-content instead!
-                 if (angular.element(queryResult)[0].scrollTop > 0) {
+            angular.element(window).bind("scroll", function() { // $window is not scrollable so we use md-content instead!
+                 if (window.pageYOffset > 0) {
                      $scope.boolChangeClass = true;
                  } else {
                      $scope.boolChangeClass = false;

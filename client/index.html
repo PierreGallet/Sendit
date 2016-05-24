@@ -9,19 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        wow = new WOW(
-            {
-                boxClass:     'wow',      // default
-                animateClass: 'animated', // change this if you are not using animate.css
-                offset:       -20,          // default
-                mobile:       true,       // keep it on mobile
-                live:         true,      // track if element updates
-                scrollContainer: '.scrollheader'
-            }
-        )
-        wow.init();
-   </script>
+
 </head>
 
 <body layout="column" ng-controller="home as vm">
@@ -56,7 +44,7 @@
         </div>
     </md-sidenav>
 
-    <div layout-fill scroll style="position:absolute !important; top:0px;" class="parent">
+    <article layout-fill scroll style="position:absolute !important; top:0px;" id="parent">
 
         <section id="solution" class="solution_holder" layout="column">
             <div class="title wow bounceInDown" flex="30" flex-xs="none" flex-sm="none" layout="row" layout-align="center center" layout-margin>
@@ -64,10 +52,10 @@
             </div>
 
             <div class="description" flex="70"  flex-xs="none" flex-sm="none" layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-align-xs="center center" layout-margin>
-                <div flex="50" flex-sm="5" flex-xs="100" layout="row" layout-align="center center" class="solution-container">
+                <div flex="50" flex-sm="100" flex-xs="100" layout="row" layout-align="center center" class="solution-container">
                     <img ng-src="/images/Chat-demo.png" aria-label="solution" class="solution wow fadeInLeft"></img>
                 </div>
-                <div flex="50" flex-sm="80" flex-xs="80" layout="column" class="solution-explainer" layout-align="center center" layout-margin>
+                <div flex="50" flex-sm="100" flex-xs="100" layout="column" class="solution-explainer" layout-align="center center" layout-margin>
                     <h1 flex="60" class="md-display-2 wow flipInX">When <strong>AI</strong> empowers <br/> customer relationship</h1>
                     <md-button flex="40" class="md-raised md-primary wow flipInX" scroll-to="contact" aria-label="tryourdemo">Request a demo</md-button>
                 </div>
@@ -127,7 +115,7 @@
                     <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
                 </div>
 
-                <div class="customer_info" layout="row" layout-align="none center" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                <div class="customer_info" layout="row" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
                     <div class="laius-wrap-2" layout="column" layout-align-sm="center center" layout-align-xs="center center">
                         <h2 class="title"> GETTING CUSTOMER'S INFORMATIONS </h2>
                         <h3 class="content">
@@ -162,7 +150,7 @@
                     <md-icon class="arrow_mobile" md-svg-icon="/images/fleche_mobile.svg" aria-label="fleche"></md-icon>
                 </div>
 
-                <div class="improving" layout="row" layout-align="none center" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
+                <div class="improving" layout="row" layout-sm="column" layout-xs="column" layout-align-sm="center center" layout-align-xs="center center">
                     <div class="laius-wrap-4" layout="column" layout-align-sm="center center" layout-align-xs="center center">
                         <h2 class="title"> CONTINUOUSLY IMPROVING </h2>
                         <h3 class="content">
@@ -228,7 +216,7 @@
             </div>
         </section>
 
-        <section id="contact" class="contact_holder" layout="column">
+        <section id="contact" class="contact_holder" layout-align="center center" layout="column">
 
             <h2 class="wow flipInX"> INTERESTED BY OUR SOLUTIONS? </h2>
             <div layout="row" layout-xs="column" layout-align="center start" layout-align-xs="center center" layout-margin>
@@ -294,8 +282,8 @@
             </div>
             <h2> © 2016 sendit.ai </h2>
         </footer>
-    </div>
-</div>
+    </article>
+
 
     <!-- <div ui-view=""></div> if we use routes-->
 
