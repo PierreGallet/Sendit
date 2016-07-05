@@ -1,0 +1,5 @@
+<div class="hellotext">
+ <h2><strong>{{t "hello.main"}} {{text}}</strong></h2>
+</div>
+
+<button class="post">Obtenir les propositions</button>

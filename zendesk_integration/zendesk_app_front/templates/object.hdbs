@@ -1,0 +1,18 @@
+<div class="hellotext">
+ <h2><strong>{{t "hello.main"}} {{text}}</strong></h2>
+</div>
+
+<button class="post">Actualiser les propositions</button>
+
+
+<hr>
+<p>{{resultat.Comment1}}</p> <button class='com1'>Envoyer</button>
+
+
+<hr>
+<p>{{resultat.Comment2}}</p> <button class='com2'>Envoyer</button>
+
+<hr>
+<p>{{resultat.Comment3}}</p> <button class='com3'>Envoyer</button>
+
+<hr>
